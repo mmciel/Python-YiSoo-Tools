@@ -3,7 +3,7 @@ import re
 import json
 
 # 随便找一个测试的链接
-url = 'https://www.zhihu.com/answer/571159853?1066866516753981440'
+url = 'https://www.zhihu.com/question/265825365/answer/565165289'
 # 构造请求头
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
