@@ -1,5 +1,7 @@
 from urllib import request
-url = "https://vdn1.vzuu.com/LD/2ccbcdf0-1648-11e9-9501-0a580a44a47f.mp4?disable_local_cache=1&bu=com&expiration=1548426897&auth_key=1548426897-0-0-2a87fbf3f91d376820027a7b02df914a&f=mp4&v=hw"
+
+
+url = "http://gslb.miaopai.com/stream/Z7vERUMvdMg36uCHJ1vRZxWhXSzLWnQ-paynhw__.mp4?yx=&refer=weibo_app&vend=weibo&label=mp4_hd&mpflag=8&Expires=1548767462&ssig=dXdKkh5eV3&KID=unistore,video"
 # 文件的方式保存下载的图片
 response = request.urlopen(url)
 #读取返回的内容
