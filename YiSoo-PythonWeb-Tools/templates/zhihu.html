@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>YiSoo</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<!-- Custom CSS -->
+<link href="/static/css/style.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- jQuery and Plugin-->
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- Buttons -->
+<link rel="stylesheet" href="http://www.bootcss.com/p/buttons/css/buttons.css">
+<script type="text/javascript" src="https://cdn.bootcss.com/Buttons/2.0.0/js/buttons.js"></script>
+</head>
+<body class="index-page">
+<div class="wrap-body">
+	<header class="main-header">
+		<div class="col-sm-8 col-sm-offset-2">
+			<!-- Static Header -->
+			<div class="header-text">
+				<div class="header-text-inner">
+					<h1>YiSoo Python Tools<br></h1>
+					<p class="btn btn-header">知乎视频提取</p><br>
+					<form action="/zhihu_data" method="post">
+					链接地址：<input type="text" class="btn btn-header" name="zhihu_url_data"><br>
+					<input type="submit" class="button button-glow button-border button-rounded button-primary" value="解析">
+					</form>
+					<br><br>
+					<p>使用说明：访问某知乎回答；点击右上角三个点；复制链接；粘贴到输入框中；点击解析即可</p>
+				</div>
+			</div><!-- /header-text -->
+		</div>
+	</header>
+	<!-- /Section: intro -->
+</div>
+
+
+<!-- JS -->
+<script src="/static/js/main.js"></script>
+<script type="text/javascript" src="/static/js/validator.min.js"></script>
+<script type="text/javascript" src="/static/js/form-scripts.js"></script>
+
+</body>
+</html>
