@@ -2,6 +2,8 @@ import requests
 import re
 import json
 from urllib import request
+
+'''测试用的url'''
 # url = "https://m.weibo.cn/status/4333134420427531?#&video"
 url = "https://m.weibo.cn/1949112803/4333794821577074"
 headers = {
@@ -9,7 +11,9 @@ headers = {
 }
 r = requests.get(url)
 
+'''获取页面数据'''
 t = r.text
+'''分析页面可以得到关于视频资源的列表'''
 pattern = re.compile(r"\"mp4_hd_mp4\": \".*\"")
 ok = pattern.findall(t)
 data = '{'+ok[0]+'}'
@@ -17,10 +21,10 @@ data_dict = json.loads(data)
 # print(data_dict)
 s = data_dict['mp4_hd_mp4']
 print(s)
-# 文件的方式保存下载的图片
+# 文件的方式保存
 response = request.urlopen(s)
-#读取返回的内容
+# 读取返回的内容
 img = response.read()
 with open('temp.mp4','wb') as f:
-    #将图片内容以二进制写入
+    # 将图片内容以二进制写入
     f.write(img)
