@@ -19,23 +19,42 @@ import requests
 import re
 app = Flask(__name__)
 
-
+'''
+    请求：主页面
+    返回值：index页面
+'''
 @app.route('/')
 def index():
     return render_template('index.html')
 
+'''
+    请求：知乎下载功能
+    返回值：
+'''
 @app.route('/zhihu')
 def zhihu():
     return render_template('zhihu.html')
 
+'''
+    请求：微博下载功能
+    返回值：
+'''
 @app.route('/weibo')
 def weibo():
     return render_template('weibo.html')
 
+'''
+    请求：网易云音乐下载功能
+    返回值：
+'''
 @app.route('/yunmusic')
 def yunmusic():
     return render_template('yunmusic.html')
 
+'''
+    请求：
+    返回值：
+'''
 def set_log(url,file,user):
     timestr = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     with open(file,'a+',encoding="utf-8") as f:
