@@ -17,7 +17,7 @@
 - YiSoo-
   PythonWeb-Tools：python3 Flask环境下部署
 
-# python package and version
+# python package and version(cmd: pip list)
 
 Package      Version
 
@@ -39,3 +39,7 @@ six          1.12.0
 urllib3      1.24.1
 web.py       0.40.dev1
 Werkzeug     0.14.1
+
+# 测试部署环境
+
+windows Server 2012
