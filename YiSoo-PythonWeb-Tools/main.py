@@ -79,6 +79,7 @@ def zhihu_data():
     set_log(zhihu_url_data,r"zhihu_log.txt",request.remote_addr)
     return mua
 
+
 @app.route("/weibo_data",methods=['POST'])
 def weibo_data():
     weibo_url_data = request.form.get('weibo_url_data')
@@ -94,6 +95,7 @@ def weibo_data():
     set_log(weibo_url_data, r"weibo_log.txt", request.remote_addr)
     return mua
 
+
 @app.route("/yun_data",methods=['POST'])
 def yun_data():
     yun_url_data = request.form.get('yun_url_data')
@@ -102,10 +104,6 @@ def yun_data():
     ok = yun_pattern.findall(music)
     data = ok[0]
     music_num = data[5:]
-    # yun_pattern2 = re.compile(r"《(.*)》")
-    # ok = yun_pattern2.findall(music)
-    # musicname = ok[0] + ".mp3"
-    # print(music_num)
     yun_url = "http://music.163.com/song/media/outer/url?id={}.mp3".format(music_num)
     yun_headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"}
     yun_r = requests.get(yun_url, headers=yun_headers)
