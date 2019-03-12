@@ -6,6 +6,7 @@ from urllib import request
 '''测试用的url'''
 # url = "https://m.weibo.cn/status/4333134420427531?#&video"
 url = "https://m.weibo.cn/1949112803/4333794821577074"
+# url = "https://m.weibo.cn/s/video/index?object_id=1034:4335969856590352&segment_id=&blog_mid=4335973183689317"
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
 }
